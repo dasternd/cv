@@ -10,12 +10,63 @@
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive resume cv</title>
+        <title>Резюме Степанов Данил</title>
     </head>
     <body>
         <!--========== HEADER ==========-->
         <header class="l-header" id="header">
-            
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Данил Степанов</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home nav__icon'></i>Home
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#profile" class="nav__link">
+                                <i class='bx bx-user nav__icon' ></i>Profile
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class='bx bx-receipt nav__icon' ></i>Skills
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#experience" class="nav__link">
+                                <i class='bx bx-briefcase-alt nav__icon' ></i>Experience
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#education" class="nav__link">
+                                <i class='bx bx-certification nav__icon' ></i>Education
+                            </a>
+                        </li>
+
+                        <!-- <li class="nav__item">
+                            <a href="#certificates" class="nav__link">
+                                <i class='bx bx-award nav__icon' ></i>Certificates
+                            </a>
+                        </li> -->
+
+                        <!-- <li class="nav__item">
+                            <a href="#references" class="nav__link">
+                                <i class='bx bx-link-external nav__icon' ></i>References
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt' ></i>
+                </div>
+            </nav>
         </header>
 
         <main class="l-main bd-container">
@@ -24,33 +75,90 @@
                 <div class="resume__left">
                     <!--========== HOME ==========-->
                     <section class="home" id="home">
+                        <div class="home__container section bd-grid">
+                            <div class="home__data bd-grid">
+                                <img src="assets/img/long_thay.jpg" alt="" class="home__img">
+                                
+                                <h1 class="home__title">Данил <b>Степанов</b></h1>
+                                <h3 class="home__profession">Инженер Microsoft</h3>
+                                
+                                <div>
+                                    <a download="" href="#" class="home__button-movil">Скачать резюме</a>
+                                </div>
+                            </div>
+
+                            <div class="home__address bd-grid">
+                                <span class="home__information">
+                                    <i class='bx bx-map home__icon'></i> Ростов-на-Дону, Россия
+                                </span>
+                                <span class="home__information">
+                                    <i class='bx bx-envelope home__icon'></i> danil@stepanov.name
+                                </span>
+                                <!--
+                                <span class="home__information">
+                                    <i class='bx bx-phone home__icon'></i> +84-988-997-071
+                                </span>
+                                -->
+                            </div>
+                        </div>
                         
                         <!-- Theme change button -->
-                        
-    
+                        <i class='bx bx-moon change-theme' title="Тема" id="theme-button"></i>
                         <!-- Button to generate and download the pdf. Available for desktop. -->
-
+                        <i class='bx bx-download generate-pdf' title="Сгенерировать PDF" id="resume-button" ></i>
                     </section>          
                     
                     <!--========== SOCIAL ==========-->
                     <section class="social section">
-                        
+                        <h2 class="section-title">Контакты</h2>
+
+                        <div class="social__container bd-grid">
+                            <a href="https://t.me/dasternd" target="_blank" class="social_link">
+                                <i class='bx bxl-telegram social__icon' ></i> @dasternd
+                            </a>
+                            </a>
+                            <a href="https://github.com/foxbunlong" target="_blank" class="social_link">
+                                <i class='bx bxl-github social__icon' ></i> @dasternd
+                            </a>
+                        </div>
                     </section>
 
                     <!--========== PROFILE ==========-->
                     <section class="profile section" id="profile">
-                        
-                    </section>
-                    
-                    <!--========== EDUCATION ==========-->
-                    <section class="education section" id="education">
-                        
-                    </section>
+                        <h2 class="section-title">Профиль</h2>
 
+                        <p class="profile__description"><b>Профиссиональный опыт:</b> Microsoft Certified Solutions Expert<br /><b>Специализация:</b> инфраструктурные решения Microsoft</p>
+                    </section>
 
                     <!--========== SKILLS  ==========-->
                     <section class="skills section" id="skills">
-                        
+                        <h2 class="section-title">Навыки</h2>
+
+                        <div class="skills__content bd-grid">
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> MECM/SCCM
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Microsoft 365
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Exchange
+                                </li>
+                            </ul>
+
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> System Center
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Windows Server
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> PowerShell
+                                </li>
+                            </ul>
+                        </div>
                     </section>
 
                 </div>
@@ -58,34 +166,196 @@
                 <div class="resume__right">
                     <!--========== EXPERIENCE ==========-->
                     <section class="experience section" id="experience">
-                        
+                        <h2 class="section-title">Опыт</h2>
+
+                        <div class="experience__container bd-grid">
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Ведущий инженер</h3>
+                                    <span class="experience__company">Январь 2023 — по настоящее время | Softline.com</span>
+                                    <p class="experience__description">Обеспечение технической поддержки у внешнего заказчика по следующим направлениям:<br>
+                                        - Exchange Server/Exchange Online<br>
+                                        - Microsoft 365/Azure AD<br>
+                                        - Active Directory/ActiveRoles<br>
+                                        - File Servers<br>
+                                        - RDS farm<br>
+                                        - Написание скриптов для автоматизации задач на PowerShell<br>
+                                        - Поддержания технической базы знаний в Confluence, решение задача по обслуживанию инфраструктуры в Jira</p>
+                                </div>
+                            </div>
+
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Инженер</h3>
+                                    <span class="experience__company">Июнь 2022 — Декабрь 2022 | Sitronics.com</span>
+                                    <p class="experience__description">- Аудит и консалтинг информационных систем на базе продуктов Microsoft.<br>
+                                        - Модернизация существующей onprem и cloud инфраструктуры заказчиков на базе Microsoft решений.<br>
+                                        - Миграция с Microsoft решений для совместной работы на отечественные продукты Р7-Офис и МойОфис.</p>
+                                </div>
+                            </div>
+
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Инженер</h3>
+                                    <span class="experience__company">Январь 2013 — Июнь 2022 | Softline.com</span>
+                                    <p class="experience__description">- Участие в пресейл проектах как архитектор.
+                                        <br>
+                                        Участие в EPG, GOV, EDU проектах как инженер.
+                                        <br>
+                                        Опыт участия в проектах:<br>
+                                        - внедрение, миграция, troubleshooting Configuration Manager (SCCM / MECM), участие в проектах с управлением десятков тысяч устройств на сотнях площадок, настройка инвентаризации, распространения пакетов приложений, OSD, управление обновлениями, управление Defender, миграция сайтов Configuration Manager, реализация отказоустойчивого решения;<br>
+                                        - управление устройствами с помощью Intune (MDM/MAM), AppLocker, BitLocker, Defender;<br>
+                                        - внедрение Office 365 (Teams, Exchange Online, OneDrive, SharePoint Online, Azure AD) интеграция Azure AD с on-premise AD (Azure AD Connect);<br>
+                                        - развертывание терминальных ферм, организация безопасного доступа с помощью Always On VPN;<br>
+                                        - мониторинг серверных приложений Microsoft и оборудование разных вендоров с помощью System Center Operation Manager;<br>
+                                        - внедрение, миграция, настройка сосуществования почтовой системы Exchange Server, реализации гибрида с Exchange Online;<br>
+                                        - внедрение средства ВКС (Lync / Skype for Business), без интеграции с телефонией;<br>
+                                        - настройка отказоустойчивой кластерной виртуализации на базе Hyper-V и System Center Virtual Machine Manager;<br>
+                                        - написание скриптов автоматизации на PowerShell.<br>
+                                        <br>
+                                        Участие в проектах на территории РФ с различными часовыми поясами, а так же в странах ВЕЦА и дальнего зарубежья.<br>
+                                        <br>
+                                        С осени 2018 года полностью работаю в режиме HomeOffice.</p>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Инженер-консультант</h3>
+                                    <span class="experience__company">Март 2012 — Декабрь 2012 | General Computers</span>
+                                    <p class="experience__description">- Участие в проектах в роли инженер-консультанта по инфраструктурным решениям Microsoft в компаниях размером от 250 пользователей.
+                                        <br>
+                                        - Построение отказоустойчивой фермы SharePoint-серверов.
+                                        <br>
+                                        - Построение отказоустойчивого с распределенной балансировки нагрузки proxy-решения на основе Forefront TMG.
+                                        <br>
+                                        - Участие в проекте по миграции пользователей с Windows Server 2003 на Windows Server 2008 R2, а так же миграции почтовых ящиков с Exchange 2003 на Exchange 2010.
+                                        <br>
+                                        - Внедрение корпоративной коммуникаций на базе Lync Server 2010. Настройка федерации.</p>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Технический специалист по решениям Microsoft</h3>
+                                    <span class="experience__company">Июль 2007 — Март 2012 | Ай-Ти Центр</span>
+                                    <p class="experience__description">- Произвел миграцию инфраструктуры с частного облака в Office 365 (E3) для 3-х десятков сотрудников (Exchange Online, Lync Online, SharePoint Online).
+                                        <br>
+                                        - Участие в роли технического пресейла в инфраструктурных (Windows Server, Exchange, Forefront, System Center) и бизнес решениях (NAV/CRM/SharePoint) Microsoft.
+                                        <br>
+                                        - Участие в проектах в роли технического консультанта.
+                                        <br>
+                                        - Участие в проектах по внедрению Dynamics NAV/CRM.
+                                        <br>
+                                        - Построение отказоустойчивых и масштабируемых кластеров 1С:Предприятия 8.
+                                        <br>
+                                        - Подготовка спецификаций и разработка проектной документации.
+                                        <br>
+                                        - Консультирование клиентов.
+                                        <br>
+                                        - Подготовка и участие в презентациях для заказчиков.
+                                        <br>
+                                        - Проведение сертифицированных курсов по продуктам Microsoft (MCT).</p>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <!-- <span class="experience__line"></span> -->
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Инженер-программист</h3>
+                                    <span class="experience__company">Октябрь 2002 — Июнь 2007 | ОАО "Аэропорт Ростов-на-Дону"</span>
+                                    <p class="experience__description">- Сопровождение программы "1С:Бухгалтерия 7.7" и прочих разделов автоматизации в соответствии с поставленными задачами начальника IT отдела.
+                                        <br>
+                                        - Знакомить пользователей с новыми разработками системного и прикладного программного обеспечения и оказывать помощь в их приобретении и освоении.
+                                        <br>
+                                        - Проводить корректировку разработанных программ на основе анализа выходных данных.
+                                        <br>
+                                        - Разрабатывать инструкцию по работе с программными продуктами, оформлять необходимую техническую и технологическую документацию.
+                                        <br>
+                                        - Администрирование группы серверов в инфраструктуре предприятия.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--========== EDUCATION ==========-->
+                    <section class="education section" id="education">
+                        <h2 class="section-title">Образование</h2>
+
+                        <div class="education__container bd-grid">
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">Аспирантура/Кафедра "Информационной безопасности</h3>
+                                    <span class="education__studies">Ростовский государственный экономический университет (РИНХ), Ростов-на-Дону</span>
+                                    <span class="education__year">2005 - 2008</span>
+                                </div>
+                            </div>
+
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <!-- <span class="education__line"></span> -->
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">Информатизации и Управления</h3>
+                                    <span class="education__studies">Ростовский государственный экономический университет (РИНХ), Ростов-на-Дону</span>
+                                    <span class="education__year">2009 - 2004</span>
+                                </div>
+                            </div>
+                        </div>
                     </section>
 
                     <!--========== CERTIFICATES ==========-->
-                    <section class="certificate section" id="certificates">
-                        
-                    </section>
+                    <!-- <section class="certificate section" id="certificates"></section> -->
 
                     <!--========== REFERENCES ==========-->
-                    <section class="references section" id="references">
-                        
-                    </section>
+                    <!-- <section class="references section" id="references"></section> -->
 
                     <!--========== LANGUAGES ==========-->
-                    <section class="languages section">
-                        
-                    </section>
+                    <!-- <section class="languages section"></section> -->
                     
                     <!--========== INTERESTS ==========-->
-                    <section class="interests section">
-                        
-                    </section>
+                    <!-- <section class="interests section"></section> -->
                 </div>
             </div>        
         </main>
 
         <!--========== SCROLL TOP ==========-->
-        
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
 
         <!--========== HTML2PDF ==========-->
         <script src="assets/js/html2pdf.bundle.min.js"></script>
